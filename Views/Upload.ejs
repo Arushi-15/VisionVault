@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision Vault Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Project Submission - Vision Vault</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="domain">Domain</label>
+      <select id="domain" name="domain" required>
+        <option value="">--Select Domain--</option>
+        <option value="AI/ML">AI/ML</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Cybersecurity">Cybersecurity</option>
+        <option value="Blockchain">Blockchain</option>
+        <option value="IoT">IoT</option>
+      </select>
+
+      <label for="title">Project Title</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="problem">Problem Statement</label>
+      <textarea id="problem" name="problem" rows="3" required></textarea>
+
+      <label for="idea">Idea Behind</label>
+      <textarea id="idea" name="idea" rows="4" required></textarea>
+
+      <label for="tech">Tech Stack</label>
+      <input type="text" id="tech" name="tech" required>
+
+      <label for="type">Type</label>
+      <select id="type" name="type" required>
+        <option value="">--Select Type--</option>
+        <option value="Web App">Web App</option>
+        <option value="Mobile App">Mobile App</option>
+        <option value="Desktop Software">Desktop Software</option>
+        <option value="Game">Game</option>
+        <option value="Research Project">Research Project</option>
+      </select>
+
+      <label for="authors">Author(s)</label>
+      <!-- <select id="authors" name="authors">
+        <option value="">--Select Author--</option>
+        <option value="Author 1">Author 1</option>
+        <option value="Author 2">Author 2</option>
+        <option value="Team Vision">Team Vision</option>
+      </select> -->
+
+      <!-- <label for="github">GitHub Link</label>
+      <input type="url" id="github" name="github">
+
+      <label for="pics">Picture Links</label>
+      <input type="url" id="pics" name="pics">
+
+      <label for="videos">Working Video Links</label>
+      <input type="url" id="videos" name="videos"> -->
+
+      <label for="desc">Description</label>
+      <textarea id="desc" name="desc" rows="4"></textarea>
+
+      <label for="file">Upload File</label>
+      <input type="file" id="file" name="file" accept=".zip, .rar, .tar, .7z" required>
+
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</body>
+</html>

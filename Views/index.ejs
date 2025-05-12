@@ -14,9 +14,9 @@
             <a href="#" class="logo">Vision <span>Vault</span></a>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/home">Home</a></li>
                     <li><a href="#">Explore</a></li>
-                    <li><a href="#">Upload</a></li>
+                    <li><a href="/upload">Upload</a></li>
                     <li><a href="#">Top</a></li>
                     <li><a href="#">Community</a></li>
                 </ul>
@@ -39,14 +39,19 @@
                 <p>Make your projects visible to the community, gather valuable feedback and insights, and get recommendations helping to suggest mentor, newest projects etc.</p>
                 <div class="hero-buttons">
                     <a href="#" class="btn btn-primary">Explore</a>
-                    <a href="#" class="btn btn-outline">Upload</a>
+                    <% if (!user) { %>
+                        <a href="/login" class="btn btn-primary">Upload</a>
+                      <% } else { %>
+                        <a href="/upload" class="btn btn-outline">Upload</a>
+                    <% } %>
+                    
                 </div>
                 <div style="margin-top: 20px; font-size: 0.8rem; color: #777;">
                     <p>Customise for creators</p>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="/api/placeholder/400/320" alt="Hero Image">
+                <img src="/images/image1.jpg" alt="Hero Image">
             </div>
         </div>
     </section>
@@ -58,7 +63,7 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-image">
-                        <img src="/api/placeholder/400/200" alt="AI/ML">
+                        <img src="/images/aiml.jpg" alt="AI/ML">
                     </div>
                     <div class="feature-content">
                         <h3>AI/ML</h3>
@@ -67,7 +72,7 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-image">
-                        <img src="/api/placeholder/400/200" alt="Full Stack">
+                        <img src="/images/fullstack.jpg" alt="Full Stack">
                     </div>
                     <div class="feature-content">
                         <h3>Full-Stack</h3>
@@ -76,7 +81,7 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-image">
-                        <img src="/api/placeholder/400/200" alt="Cloud">
+                        <img src="/images/cloud.jpg" alt="Cloud">
                     </div>
                     <div class="feature-content">
                         <h3>Cloud</h3>
@@ -104,6 +109,7 @@
                         <div style="color: #3498db;">● Queue 1</div>
                         <div style="background: #333; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">AI</div>
                     </div>
+                    <img src="/images/decorate4.jpg" alt="AI Image 1">
                     <div style="color: #888; font-size: 0.8rem;">updated 15 mins</div>
                     <div style="margin-top: 50px; font-size: 0.9rem;">Auto update</div>
                     <div style="color: #888; font-size: 0.8rem;">Get the optimal results on your interactions with AI.</div>
@@ -113,6 +119,7 @@
                         <div style="color: #f39c12;">Test Interface 1</div>
                         <div style="background: #333; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">Web</div>
                     </div>
+                    <img src="/images/decorate1.jpg" alt="AI Image 1">
                     <div style="color: #888; font-size: 0.8rem;">Your task interface 2</div>
                     <div style="margin-top: 50px; font-size: 0.9rem;">Network Interface</div>
                     <div style="color: #888; font-size: 0.8rem;">Manage interface calls. All interfaces show real-time data.</div>
@@ -143,22 +150,22 @@
             </div>
             <div class="dashboard-grid">
                 <div class="dashboard-card">
-                    <div class="dashboard-icon">◼</div>
+                    <div class="dashboard-icon"><img src="/images/logo1.jpg"></div>
                     <h3>Total Submitted</h3>
                     <p>Keep track of your latest projects.</p>
                 </div>
                 <div class="dashboard-card">
-                    <div class="dashboard-icon">◼</div>
+                    <div class="dashboard-icon"><img src="/images/logo2.jpg"></div>
                     <h3>Saved Projects</h3>
                     <p>Your storage of your colleagues that interest you.</p>
                 </div>
                 <div class="dashboard-card">
-                    <div class="dashboard-icon">◼</div>
+                    <div class="dashboard-icon"><img src="/images/logo3.jpg"></div>
                     <h3>Achievements</h3>
                     <p>Stay track of your metrics and your best works.</p>
                 </div>
                 <div class="dashboard-card">
-                    <div class="dashboard-icon">◼</div>
+                    <div class="dashboard-icon"><img src="/images/logo4.jpg"></div>
                     <h3>Gather Feedback</h3>
                     <p>Gather and manage feedback on your projects.</p>
                 </div>
@@ -210,6 +217,7 @@
             </div>
             <div class="community-images">
                 <!-- Images here -->
+                <img src="/images/computer.jpg" alt="Community Image 1">
             </div>
         </div>
     </section>
@@ -218,9 +226,10 @@
     <footer>
         <div class="container footer-container">
             <div class="social-links">
-                <a href="#">◯</a>
-                <a href="#">◯</a>
-                <a href="#">◯</a>
+                <a href="#"><img src="/images/x.png"></a>
+                <a href="#"><img src="/images/linkedin.png"></a>
+                <a href="#"><img src="/images/github.png"></a>
+                <a href="#"><img src="/images/logo_main.png"></a>
             </div>
             <div class="newsletter">
                 <input type="email" placeholder="Enter your email">

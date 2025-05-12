@@ -16,7 +16,13 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true
-  }
+  },
+  uploadedFiles: [{
+    url: String,
+    public_id: String, // Store the public ID from Cloudinary to delete if needed
+    filename: String, // The name of the file uploaded
+    created_at: { type: Date, default: Date.now }
+  }]
 });
 
 // Hash password before saving user to the database
