@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Vault - Showcase. Collaborate. Innovate.</title>
+   <!--<style>
+        :root {
+    --primary-color: #333;
+    --secondary-color: #3498db;
+    --light-bg: #f5f5f5;
+    --dark-bg: #222;
+    --text-light: #fff;
+    --text-dark: #333;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #222;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: #555;
+    max-width: 500px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    text-align: left;
+}
+
+.feature-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature-content {
+    padding: 20px;
+}
+
+.feature-content h3 {
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* AI Section */
+.ai-section {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 60px 0;
+}
+
+.ai-content {
+    margin-bottom: 40px;
+}
+
+.ai-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.ai-card {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    height: 200px;
+}
+
+.ai-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ai-footer {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.ai-feature-card {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Dashboard Section */
+.dashboard {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.dashboard h2 {
+    margin-bottom: 20px;
+}
+
+.dashboard-buttons {
+    margin-bottom: 40px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    background-color: #333;
+    color: var(--text-light);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+.dashboard-card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.dashboard-icon {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Organization Section */
+.organization {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.organization h2 {
+    margin-bottom: 40px;
+}
+
+.contributors-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contributors-nav button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.contributors-nav button.active {
+    background-color: #eee;
+}
+
+.contributors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contributor-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: var(--card-shadow);
+}
+
+/* Community Section */
+.community {
+    padding: 60px 0;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    text-align: center;
+    position: relative;
+}
+
+.community h2 {
+    margin-bottom: 20px;
+}
+
+.community-images {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 20px 0;
+    border-top: 1px solid #444;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        margin-bottom: 30px;
+    }
+    
+    .hero p {
+        margin: 0 auto 25px;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .ai-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .ai-footer {
+        grid-template-columns: 1fr;
+    }
+    
+    .contributors-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+    </style>-->
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Vision <span>Vault</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Upload</a></li>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </nav>
+            <% if (user) { %>
+                <a href="/logout" class="btn btn-primary">Logout</a>
+              <% } else { %>
+                <a href="/login" class="btn btn-primary">Login</a>
+                <a href="/signup" class="btn btn-primary">Sign Up</a>
+            <% } %>
+            <button class="hamburger">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container" style="display: flex;">
+            <div class="hero-content">
+                <h1>Showcase. Collaborate. Innovate.</h1>
+                <p>Make your projects visible to the community, gather valuable feedback and insights, and get recommendations helping to suggest mentor, newest projects etc.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                    <a href="#" class="btn btn-outline">Upload</a>
+                </div>
+                <div style="margin-top: 20px; font-size: 0.8rem; color: #777;">
+                    <p>Customise for creators</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/400/320" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Sort the projects, align them, manage your students.</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="/api/placeholder/400/200" alt="AI/ML">
+                    </div>
+                    <div class="feature-content">
+                        <h3>AI/ML</h3>
+                        <p>AI/ML projects to enhance data learning capabilities. Data processing and representation to create valuable products across industries, finance, and technology.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="/api/placeholder/400/200" alt="Full Stack">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Full-Stack</h3>
+                        <p>Full stack projects integrate frontend, backend, and database technologies. Develop creative solutions to real-world problems.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="/api/placeholder/400/200" alt="Cloud">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Cloud</h3>
+                        <p>Stream hosting that encompasses CDN, API endpoint development from back-end and create elastic resources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Section -->
+    <section class="ai-section">
+        <div class="container">
+            <div class="ai-content">
+                <h2>Manage your interactions with AI</h2>
+                <p>Sort, align easily with our AI feature</p>
+                <div style="margin-top: 15px;">
+                    <a href="#" class="btn btn-outline">Explore</a>
+                </div>
+            </div>
+
+            <div class="ai-features">
+                <div class="ai-card">
+                    <div class="ai-header">
+                        <div style="color: #3498db;">● Queue 1</div>
+                        <div style="background: #333; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">AI</div>
+                    </div>
+                    <div style="color: #888; font-size: 0.8rem;">updated 15 mins</div>
+                    <div style="margin-top: 50px; font-size: 0.9rem;">Auto update</div>
+                    <div style="color: #888; font-size: 0.8rem;">Get the optimal results on your interactions with AI.</div>
+                </div>
+                <div class="ai-card">
+                    <div class="ai-header">
+                        <div style="color: #f39c12;">Test Interface 1</div>
+                        <div style="background: #333; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">Web</div>
+                    </div>
+                    <div style="color: #888; font-size: 0.8rem;">Your task interface 2</div>
+                    <div style="margin-top: 50px; font-size: 0.9rem;">Network Interface</div>
+                    <div style="color: #888; font-size: 0.8rem;">Manage interface calls. All interfaces show real-time data.</div>
+                </div>
+            </div>
+
+            <div class="ai-footer">
+                <div class="ai-feature-card">
+                    <h3>Connect Features</h3>
+                    <p style="color: #888; font-size: 0.8rem;">Easily create content for the project from the database.</p>
+                </div>
+                <div class="ai-feature-card">
+                    <h3>Integrate Files Easily</h3>
+                    <p style="color: #888; font-size: 0.8rem;">Our platform simplifies config files and final mounting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard">
+        <div class="container">
+            <h2>Exclusive Dashboard Features</h2>
+            <div class="dashboard-buttons" style="margin-bottom: 30px;">
+                <a href="#" class="btn btn-primary">Login</a>
+            </div>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="dashboard-icon">◼</div>
+                    <h3>Total Submitted</h3>
+                    <p>Keep track of your latest projects.</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-icon">◼</div>
+                    <h3>Saved Projects</h3>
+                    <p>Your storage of your colleagues that interest you.</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-icon">◼</div>
+                    <h3>Achievements</h3>
+                    <p>Stay track of your metrics and your best works.</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="dashboard-icon">◼</div>
+                    <h3>Gather Feedback</h3>
+                    <p>Gather and manage feedback on your projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization Section -->
+    <section class="organization">
+        <div class="container">
+            <h2>A platform to benefit the entire organization</h2>
+            <div class="contributors-nav">
+                <button class="active">Top Contributors</button>
+                <button>Average Contributors</button>
+                <button>Low Contributors</button>
+            </div>
+            <div class="contributors-grid">
+                <div class="contributor-card">
+                    <div style="margin-bottom: 10px;">✓</div>
+                    <div style="color: #888; font-size: 0.8rem;">
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    </div>
+                </div>
+                <div class="contributor-card">
+                    <div style="margin-bottom: 10px;">✓</div>
+                    <div style="color: #888; font-size: 0.8rem;">
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    </div>
+                </div>
+                <div class="contributor-card">
+                    <div style="margin-bottom: 10px;">✓</div>
+                    <div style="color: #888; font-size: 0.8rem;">
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community">
+        <div class="container">
+            <h2>Join our Community</h2>
+            <div style="margin-top: 20px;">
+                <a href="#" class="btn btn-outline">Sign Up</a>
+            </div>
+            <div class="community-images">
+                <!-- Images here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="social-links">
+                <a href="#">◯</a>
+                <a href="#">◯</a>
+                <a href="#">◯</a>
+            </div>
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button class="btn btn-primary">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple toggle for mobile menu
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        });
+        // Toggle Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav ul');
+    
+        hamburger.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+    
+        // Contributors Tab Logic
+        const buttons = document.querySelectorAll('.contributors-nav button');
+        const contributorGrid = document.querySelector('.contributors-grid');
+    
+        const contributorData = {
+            'Top Contributors': [
+                'Alice: 24 uploads',
+                'Bob: 20 uploads',
+                'Carol: 18 uploads'
+            ],
+            'Average Contributors': [
+                'Dave: 12 uploads',
+                'Eve: 10 uploads',
+                'Frank: 9 uploads'
+            ],
+            'Low Contributors': [
+                'Grace: 3 uploads',
+                'Heidi: 2 uploads',
+                'Ivan: 1 upload'
+            ]
+        };
+    
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+    
+                // Get contributors type
+                const type = button.textContent;
+                const data = contributorData[type];
+    
+                // Update contributor cards
+                contributorGrid.innerHTML = data.map(name => `
+                    <div class="contributor-card">
+                        <div style="margin-bottom: 10px;">✓</div>
+                        <div style="color: #888; font-size: 0.8rem;">
+                            ${name}<br>Engaged contributor
+                        </div>
+                    </div>
+                `).join('');
+            });
+        });
+    
+        // Newsletter Placeholder Logic
+        const newsletter = document.querySelector('.newsletter');
+        if (newsletter) {
+            const input = newsletter.querySelector('input');
+            input.placeholder = "Enter your email";
+        }
+    
+        // AI Card Placeholder Replacement (example)
+        const aiCards = document.querySelectorAll('.ai-card');
+        aiCards.forEach((card, idx) => {
+            const label = card.querySelector('.ai-header div:first-child');
+            label.textContent = idx % 2 === 0 ? 'AI Queue Manager' : 'Live Test Node';
+        });
+    </script>
+    
+</body>
+</html>
